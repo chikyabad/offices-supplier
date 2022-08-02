@@ -11,6 +11,7 @@ build-parameters:
       commands:
         - npx -p @sap/cds-dk cds build --production
 
+
 modules:
   - name: HC_OFFICE_SUPPLIES-srv
     type: nodejs
