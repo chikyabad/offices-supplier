@@ -1,0 +1,36 @@
+
+###
+POST http://localhost:39231/catalog/Suppliers/
+Content-Type: application/json
+
+{
+    "ID": "13726eeb-165c-3713-a674-3d2fc4f5127f",
+    "identifier": "OLIVER",
+    "name": "CAC",
+    "phone": "+1 787-38515864",
+    "building": "301",
+    "street": "City View Plaza",
+    "postCode": "Guaynabo",
+    "city": "PR 00968",
+    "country": "PR"
+}
+
+###
+GET http://localhost:39231/catalog/Suppliers/13726eeb-165c-3713-a674-3d2fc4f5127f
+
+### Submit Suppliers
+GET http://localhost:39231/catalog/Products
+
+### Browse Products
+GET http://localhost:4004/catalog/Products
+
+### Browse Products - Product,Identifier ,Price
+GET http://localhost:4004/catalog/Products?
+&$select=identifier,price
+
+### Submit Products
+POST http://localhost:4004/catalog/Products
+Content-Type: application/json
+
+{"ID":"cffeab01-ccd3-4369-821d-29157552dffb" 
+}

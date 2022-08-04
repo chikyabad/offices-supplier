@@ -7,10 +7,13 @@
     "private": true,
     "dependencies": {
         "@sap/cds": ">=5",
+        "@sap/hana-client": "^2.13.22",
         "express": "^4",
-        "hdb": "^0.19.0"
+        "hdb": "^0.19.0",
+        "passport": "^0.6.0"
     },
     "devDependencies": {
+        "@sap/hdi-deploy": "4.4.1",
         "sqlite3": "^5.0.4"
     },
     "scripts": {
@@ -46,6 +49,12 @@
             "db": {
                 "kind": "hana-cloud"
             }
+        },
+        "hana": {
+            "deploy-format": "hdbtable"
         }
+    },
+    "odata": {
+        "flavor": "x4"
     }
 }
